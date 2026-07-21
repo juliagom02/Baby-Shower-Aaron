@@ -309,7 +309,8 @@ grid-template-columns:1fr;
 
 .info-card{
     background:#f8fdff;
-    border-radius:24px;
+    border-radius:30px;
+    border:1px solid rgba(120,190,220,.15);
     padding:30px 20px;
     text-align:center;
     box-shadow:0 12px 25px rgba(0,0,0,.08);
