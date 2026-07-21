@@ -332,3 +332,59 @@ grid-template-columns:1fr;
     color:#5d7e8f;
     line-height:1.6;
 }
+/* ---------- CARTES ---------- */
+
+.info-cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin:50px 0 30px;
+}
+
+.info-card{
+    background:#ffffff;
+    border-radius:25px;
+    padding:25px;
+    text-align:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.info-card:hover{
+    transform:translateY(-5px);
+}
+
+.icon{
+    font-size:34px;
+    margin-bottom:12px;
+}
+
+.info-card h3{
+    color:#15608d;
+    margin-bottom:10px;
+}
+
+.info-card p{
+    color:#5f7f91;
+    line-height:1.6;
+}
+
+.maps-button{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.maps-button a{
+    display:inline-block;
+    background:#22b8cf;
+    color:white;
+    text-decoration:none;
+    padding:15px 28px;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.maps-button a:hover{
+    background:#1599b0;
+}
