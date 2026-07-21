@@ -408,22 +408,6 @@ grid-template-columns:1fr;
     margin-bottom:35px;
 }
 
-.echo-frame{
-    max-width:380px;
-    margin:0 auto 35px;
-    padding:12px;
-    background:white;
-    border-radius:25px;
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-}
-
-.echo-frame img{
-    display:block;
-    width:100%;
-    height:auto;
-    border-radius:18px;
-}
-
 .echo-text{
     max-width:520px;
     margin:auto;
