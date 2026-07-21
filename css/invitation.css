@@ -415,3 +415,12 @@ grid-template-columns:1fr;
     font-size:20px;
     line-height:1.8;
 }
+.echo{
+    display:block;
+    width:320px;
+    max-width:90%;
+    margin:35px auto;
+    border-radius:25px;
+    border:8px solid white;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
