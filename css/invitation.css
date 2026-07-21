@@ -1,154 +1,240 @@
+/* ---------- RESET ---------- */
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
-    font-family: "Trebuchet MS", sans-serif;
-    background:linear-gradient(#dff6ff,#bdeeff,#eafcff);
-    min-height:100vh;
+
+background:linear-gradient(180deg,#dff7ff,#bfeeff,#e8fbff);
+
+font-family:Georgia, serif;
+
+overflow-x:hidden;
+
 }
+
+/* ---------- FOND ---------- */
 
 .background{
 
-    width:100%;
-    min-height:100vh;
+min-height:100vh;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+padding:60px 20px;
 
-    padding:40px 20px;
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+position:relative;
 
 }
+
+/* ---------- BULLES ---------- */
+
+.background::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+radial-gradient(circle at 20% 20%,rgba(255,255,255,.45) 2px,transparent 3px),
+
+radial-gradient(circle at 70% 40%,rgba(255,255,255,.35) 4px,transparent 5px),
+
+radial-gradient(circle at 35% 70%,rgba(255,255,255,.30) 3px,transparent 4px);
+
+animation:bulles 20s linear infinite;
+
+opacity:.7;
+
+}
+
+@keyframes bulles{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-120px);
+
+}
+
+}
+
+/* ---------- CARTE ---------- */
 
 .card{
 
-    width:100%;
-    max-width:850px;
+background:white;
 
-    background:white;
+max-width:900px;
 
-    border-radius:35px;
+width:100%;
 
-    padding:50px;
+border-radius:40px;
 
-    box-shadow:0 25px 60px rgba(0,0,0,.15);
+padding:60px;
 
-    text-align:center;
+box-shadow:0 30px 80px rgba(0,0,0,.15);
+
+position:relative;
+
+z-index:2;
 
 }
 
+/* ---------- TITRES ---------- */
+
 h1{
 
-    color:#bc8b30;
+font-size:60px;
 
-    font-size:52px;
+color:#bc8b30;
 
-    margin-bottom:15px;
+text-align:center;
+
+margin-bottom:15px;
 
 }
 
 h2{
 
-    color:#124b86;
+font-size:48px;
 
-    font-size:42px;
+text-align:center;
+
+color:#124f8d;
 
 }
 
 .subtitle{
 
-    margin-top:15px;
+text-align:center;
 
-    color:#4d8ea8;
+margin:20px 0;
 
-    font-size:24px;
+font-size:24px;
+
+color:#4f9db7;
 
 }
 
 .baby{
 
-    margin:45px 0;
+text-align:center;
+
+margin:40px 0;
 
 }
 
 .baby h3{
 
-    color:#2aa8c8;
+font-size:46px;
 
-    font-size:44px;
+color:#23b4cb;
 
 }
 
+/* ---------- INFOS ---------- */
+
 .infos{
 
-    display:grid;
+display:grid;
 
-    grid-template-columns:repeat(3,1fr);
+grid-template-columns:repeat(3,1fr);
 
-    gap:25px;
+gap:30px;
 
-    margin-top:40px;
+margin-top:50px;
 
 }
 
 .infos div{
 
-    background:#f7fdff;
+background:#f5fcff;
 
-    border-radius:25px;
+padding:30px;
 
-    padding:25px;
+border-radius:25px;
+
+text-align:center;
+
+box-shadow:0 8px 20px rgba(0,0,0,.05);
+
+transition:.3s;
+
+}
+
+.infos div:hover{
+
+transform:translateY(-8px);
 
 }
 
 .infos h4{
 
-    color:#1b5b7b;
+margin:15px 0;
 
-    margin:15px 0;
+color:#145a82;
 
 }
 
 .infos p{
 
-    color:#49738b;
+color:#507b91;
 
-    line-height:1.6;
+line-height:1.5;
 
 }
 
-@media(max-width:700px){
+/* ---------- MOBILE ---------- */
+
+@media(max-width:768px){
 
 .card{
 
-padding:30px;
+padding:35px;
+
+}
+
+h1{
+
+font-size:42px;
+
+}
+
+h2{
+
+font-size:34px;
+
+}
+
+.baby h3{
+
+font-size:32px;
 
 }
 
 .infos{
 
 grid-template-columns:1fr;
-
-}
-
-h1{
-
-font-size:40px;
-
-}
-
-h2{
-
-font-size:34px;
-
-}
-
-.baby h3{
-
-font-size:34px;
 
 }
 
