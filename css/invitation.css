@@ -394,33 +394,3 @@ grid-template-columns:1fr;
 .maps-button a:hover{
     background:#1599b0;
 }
-/* ---------- ÉCHOGRAPHIE ---------- */
-
-.baby-preview{
-    text-align:center;
-    margin:80px auto;
-    max-width:650px;
-}
-
-.baby-preview h2{
-    color:#1b5d87;
-    font-size:38px;
-    margin-bottom:35px;
-}
-
-.echo-text{
-    max-width:520px;
-    margin:auto;
-    color:#5d7e8f;
-    font-size:20px;
-    line-height:1.8;
-}
-.echo{
-    display:block;
-    width:320px;
-    max-width:90%;
-    margin:35px auto;
-    border-radius:25px;
-    border:8px solid white;
-    box-shadow:0 15px 35px rgba(0,0,0,.15);
-}
