@@ -394,3 +394,66 @@ grid-template-columns:1fr;
 .maps-button a:hover{
     background:#1599b0;
 }
+ /* ---------- LISTE DE NAISSANCE ---------- */
+
+.gift-section{
+    text-align:center;
+    padding:90px 25px;
+    background:linear-gradient(#dff6ff,#f8fdff);
+}
+
+.gift-section h2{
+    color:#195a96;
+    font-size:42px;
+    margin-bottom:25px;
+}
+
+.gift-intro{
+    max-width:600px;
+    margin:0 auto 50px;
+    color:#5d7e8f;
+    font-size:21px;
+    line-height:1.8;
+}
+
+.gift-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    max-width:950px;
+    margin:auto;
+}
+
+.gift-card{
+    background:white;
+    border-radius:30px;
+    padding:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.gift-card:hover{
+    transform:translateY(-8px);
+}
+
+.gift-icon{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.gift-card h3{
+    color:#195a96;
+    margin-bottom:12px;
+}
+
+.gift-card p{
+    color:#6b8b9d;
+    line-height:1.6;
+}
+
+.thanks{
+    margin-top:60px;
+    color:#2caed2;
+    font-size:24px;
+    font-weight:bold;
+}
