@@ -242,9 +242,9 @@ grid-template-columns:1fr;
 .turtle{
     position:absolute;
     top:55px;
-    left:35px;
+    left:20px;
     width:120px;
-    z-index:10;
+    z-index:5;
     animation:floatTurtle 5s ease-in-out infinite;
 }
 
@@ -267,6 +267,7 @@ grid-template-columns:1fr;
 .hero{
     text-align:center;
     margin-bottom:50px;
+    padding-top:30px;
 }
 
 .overline{
