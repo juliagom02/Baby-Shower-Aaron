@@ -241,8 +241,8 @@ grid-template-columns:1fr;
 
 .turtle{
     position:absolute;
-    top:20px;
-    left:20px;
+    top:55px;
+    left:35px;
     width:120px;
     z-index:10;
     animation:floatTurtle 5s ease-in-out infinite;
