@@ -237,5 +237,28 @@ font-size:32px;
 grid-template-columns:1fr;
 
 }
+/* ---------- TORTUE ---------- */
 
+.turtle{
+    position:absolute;
+    top:20px;
+    left:20px;
+    width:180px;
+    z-index:10;
+    animation:floatTurtle 5s ease-in-out infinite;
+}
+
+@keyframes floatTurtle{
+    0%{
+        transform:translateY(0px) rotate(-3deg);
+    }
+
+    50%{
+        transform:translateY(-10px) rotate(3deg);
+    }
+
+    100%{
+        transform:translateY(0px) rotate(-3deg);
+    }
+}
 }
