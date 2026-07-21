@@ -394,3 +394,41 @@ grid-template-columns:1fr;
 .maps-button a:hover{
     background:#1599b0;
 }
+/* ---------- ÉCHOGRAPHIE ---------- */
+
+.baby-preview{
+    text-align:center;
+    margin:80px auto;
+    max-width:650px;
+}
+
+.baby-preview h2{
+    color:#1b5d87;
+    font-size:38px;
+    margin-bottom:35px;
+}
+
+.echo-frame{
+    width:260px;
+    height:260px;
+    margin:0 auto 35px;
+    padding:10px;
+    border-radius:50%;
+    background:linear-gradient(145deg,#ffffff,#dff6ff);
+    box-shadow:0 12px 35px rgba(0,0,0,.12);
+}
+
+.echo-frame img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:50%;
+}
+
+.echo-text{
+    max-width:520px;
+    margin:auto;
+    color:#5d7e8f;
+    font-size:20px;
+    line-height:1.8;
+}
