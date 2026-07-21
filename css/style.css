@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Trebuchet MS", sans-serif;
+    overflow:hidden;
+    background:linear-gradient(to bottom,#aee8ff,#dff8ff,#f7fdff);
+}
+
+.ocean{
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    background:
+    radial-gradient(circle at top,#dff8ff 0%,#a9e3ff 60%,#82d4ff 100%);
+}
+
+.welcome{
+    text-align:center;
+    z-index:10;
+    padding:20px;
+}
+
+h1{
+    color:#0f5c7d;
+    font-size:2rem;
+    margin-bottom:20px;
+}
+
+p{
+    color:#215f7a;
+    font-size:1.1rem;
+    margin-bottom:30px;
+}
+
+.envelope{
+    width:180px;
+    height:120px;
+    background:#fffdf8;
+    border-radius:12px;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:70px;
+    cursor:pointer;
+    transition:.35s;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+}
+
+.envelope:hover{
+    transform:scale(1.08);
+}
+
+.click{
+    margin-top:20px;
+    color:#0087b8;
+    font-weight:bold;
+}
+
+.bubbles span{
+    position:absolute;
+    bottom:-100px;
+    width:18px;
+    height:18px;
+    background:rgba(255,255,255,.55);
+    border-radius:50%;
+    animation:float 12s linear infinite;
+}
+
+.bubbles span:nth-child(1){left:8%;animation-duration:10s;}
+.bubbles span:nth-child(2){left:20%;animation-duration:14s;}
+.bubbles span:nth-child(3){left:42%;animation-duration:9s;}
+.bubbles span:nth-child(4){left:65%;animation-duration:13s;}
+.bubbles span:nth-child(5){left:82%;animation-duration:11s;}
+.bubbles span:nth-child(6){left:92%;animation-duration:15s;}
+
+@keyframes float{
+    from{
+        transform:translateY(0);
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+    to{
+        transform:translateY(-120vh);
+        opacity:0;
+    }
+}
